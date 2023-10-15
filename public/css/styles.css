@@ -1,0 +1,77 @@
+html{
+    background-color: var( --main-color);
+    color: var(--light-shade);
+    font-family: 'Foldit', cursive;
+    font-size: xx-large;
+
+    --main-color: #0C040A;
+    --main-shade: #2C2C2C;
+    --light-color: #D6A552;
+    --light-shade: #D9D0AC;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    margin: 1vh;
+    gap: 5vh;
+    margin: 2vh 5vh 2vh 5vh; 
+}
+
+.header_profil_img {
+    width: 16vh; /* Ajustez la largeur de la div parente selon vos besoins */
+    height: 16vh; /* Ajustez la hauteur de la div parente selon vos besoins */
+    overflow: hidden; /* Masque tout contenu dépassant de la div parente */
+    border-radius: 50%; /* Rend l'image ronde */
+    background-color:  var(--light-shade);
+    position: ;
+    justify-content: center;
+  }
+  
+.header_profil_name{
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+}
+
+.header_profil_img img {
+    width: 100%; /* Ajuste la largeur de l'image à la taille de la div parente */
+    height: auto; /* Ajuste automatiquement la hauteur en fonction de la largeur */
+    display: block; /* Empêche les marges par défaut de l'image */
+  }
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.article_overview {
+    margin: 5px;
+    height: 80vh;
+    width: 20%;
+    border-radius: 50% 50% 50% 50% / 15% 15% 15% 15%;
+    transition: transform 0.3s ease; /* Ajoute une transition fluide */
+    overflow: hidden;
+}
+
+.article_overview img{
+    width: 100%; /* Ajuste la largeur de l'image à la taille de la div parente */
+    height: 100%; /* Ajuste automatiquement la hauteur en fonction de la largeur */
+    justify-content: center;
+}
+
+.first:hover {
+    transform: translateY(1vh); /* Réinitialise le décalage vertical lorsque l'article est survolé */
+}
+
+.seconde:hover {
+    transform: translateY(1vh); /* Réinitialise le décalage vertical lorsque l'article est survolé */
+}
+
+.third:hover {
+    transform: translateY(1vh); /* Réinitialise le décalage vertical lorsque l'article est survolé */
+}
+
+.fourth:hover {
+    transform: translateY(1vh); /* Réinitialise le décalage vertical lorsque l'article est survolé */
+}
