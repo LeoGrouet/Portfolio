@@ -10,6 +10,10 @@ html{
     --light-shade: #D9D0AC;
 }
 
+.hidden{
+    display: none;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -24,14 +28,13 @@ header{
     overflow: hidden; /* Masque tout contenu dépassant de la div parente */
     border-radius: 50%; /* Rend l'image ronde */
     background-color:  var(--light-shade);
-    position: ;
     justify-content: center;
   }
   
 .header_profil_name{
     margin-left: auto;
     margin-right: auto;
-    width: 6em;
+    width: auto;
 }
 
 .header_profil_img img {
@@ -46,32 +49,100 @@ main{
 }
 
 .article_overview {
-    margin: 5px;
-    height: 80vh;
-    width: 20%;
-    border-radius: 50% 50% 50% 50% / 15% 15% 15% 15%;
-    transition: transform 0.3s ease; /* Ajoute une transition fluide */
+    display: inline-block;
+    position: relative;
     overflow: hidden;
+    margin: 12px;
+    height: 80vh;
+    width: 15%;
+    border-radius: 50% 50% 50% 50% / 15% 15% 15% 15%;
+    transition: 0.4s ease;
 }
 
-.article_overview img{
-    width: 100%; /* Ajuste la largeur de l'image à la taille de la div parente */
-    height: 100%; /* Ajuste automatiquement la hauteur en fonction de la largeur */
-    justify-content: center;
+.anim:hover {
+    transform: translateY(1vh) scale(1.1); /* Ajoutez l'échelle ici et utilisez translateY pour éviter de réinitialiser la transition */
+    transition: 0.2s ease-out;
 }
 
-.first:hover {
-    transform: translateY(1vh); /* Réinitialise le décalage vertical lorsque l'article est survolé */
+.article_overview_title{
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    margin: 0;
+    padding: 25px 0px;
+    color: var(--light-color);
+    transition: 0.2s;
 }
 
-.seconde:hover {
-    transform: translateY(1vh); /* Réinitialise le décalage vertical lorsque l'article est survolé */
+.article_overview_title_clicked{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    z-index: 2;
 }
 
-.third:hover {
-    transform: translateY(1vh); /* Réinitialise le décalage vertical lorsque l'article est survolé */
+.article_overview_title_text {
+    padding: 5px 5px 5px 5px;
 }
 
-.fourth:hover {
-    transform: translateY(1vh); /* Réinitialise le décalage vertical lorsque l'article est survolé */
+.merged {
+    width: 100px;
+    height: 100px;
+    border-radius: 1px;
+    border: #D6A552;
 }
+
+.article_overview_description{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+#first{
+    background-image: url(../Image/chemin.jpg);
+    background-size: cover; /* Optionnel : pour ajuster la taille de l'image de manière à couvrir l'élément */
+    background-repeat: no-repeat; /* Optionnel : pour éviter la répétition de l'image */
+    background-position: center; 
+    transition: transform 0.2s;
+}
+
+#second{
+    background-image: url(../Image/basket.jpg);
+    background-size: cover; /* Optionnel : pour ajuster la taille de l'image de manière à couvrir l'élément */
+    background-repeat: no-repeat; /* Optionnel : pour éviter la répétition de l'image */
+    background-position: center; 
+    transition: transform 0.2s;
+}
+
+#third{
+    background-image: url(../Image/chemin.jpg);
+    background-size: cover; /* Optionnel : pour ajuster la taille de l'image de manière à couvrir l'élément */
+    background-repeat: no-repeat; /* Optionnel : pour éviter la répétition de l'image */
+    background-position: center; 
+    transition: transform 0.2s;
+}
+
+#fourth{
+    background-image: url(../Image/chemin.jpg);
+    background-size: cover; /* Optionnel : pour ajuster la taille de l'image de manière à couvrir l'élément */
+    background-repeat: no-repeat; /* Optionnel : pour éviter la répétition de l'image */
+    background-position: center; 
+    transition: transform 0.2s;
+}
+
+.article_overview #first:hover,
+.article_overview #second:hover,
+.article_overview #third:hover,
+.article_overview #fourth:hover {
+    transform: scale(1.1); /* Applique un zoom de 110% lors du survol */
+}
+

@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     <script src="/js/randomisateurImg.js" defer ></script>
+    <script src="/js/fusionArticle.js" defer></script>
     <title>Page Perso</title>
 </head>
 <body>
@@ -18,22 +19,42 @@
             
         </div>
         <div class="header_profil_name">
-            <p>Léo Grouet</p>
+            <p>Léo Grouet - Développeur Web</p>
         </div>
     </header>
 
     <main>
-        <article class="article_overview first">
-            <img src="/Image/chemin.jpg" >
+        <article id="first" class="article_overview anim">
+            <div class="article_overview_title">
+                <h3><p class="article_overview_title_text">Mon parcours</p></h3>
+                <div style="display: none;" class="article_overview_description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus cum numquam aliquid voluptatum quo, ducimus omnis nisi labore nihil placeat, praesentium explicabo voluptate ullam dolorem at nemo unde tempora hic!
+                </div>
+            </div>
         </article>
-        <article class="article_overview seconde">
-            <img src="Image/baske.jpg" >
+        <article id="second" class="article_overview anim">
+            <div class="article_overview_title">
+                <h3 class="article_overview_title_text"><p>Mes hobbies</p></h3>
+                <div style="display: none;" class="article_overview_description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nisi dolor deleniti, quis, atque ab nihil perferendis aliquam tempora totam libero. Eum placeat aut fugiat? Perspiciatis, laboriosam minus. Possimus, repellendus!
+                </div>
+            </div>
         </article>
-        <article class="article_overview third">
-            <img src="Image/chemin.jpg" >
+        <article id="third" class="article_overview anim">
+                <div class="article_overview_title">
+                    <h3><p class="article_overview_title_text">Mes projets</p></h3>
+                    <div style="display: none;" class="article_overview_description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis sint voluptates vel beatae labore animi perspiciatis mollitia quos ad cumque est dolore aspernatur illo optio laboriosam a dolor, ipsum quibusdam.
+                    </div>
+                </div>
         </article>
-        <article class="article_overview fourth">
-            <img src="Image/chemin.jpg ">
+        <article id="fourth" class="article_overview anim">
+            <div class="article_overview_title">
+                <h3><p class="article_overview_title_text">Mon CV</p></h3>
+                <div style="display: none;" class="article_overview_description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem atque vero, maxime reiciendis laborum omnis ipsam voluptatem cum error tempore quae deserunt nisi voluptatum fugiat quod pariatur voluptates natus eos?
+                </div>
+            </div>
         </article>
     </main>
 
