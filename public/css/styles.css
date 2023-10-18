@@ -1,7 +1,7 @@
 html{
     background-color: var( --main-color);
     color: var(--light-shade);
-    font-family: 'Foldit', cursive;
+    font-family:'Courier New', Courier, monospace;
     font-size: xx-large;
 
     --main-color: #0C040A;
@@ -76,12 +76,11 @@ main{
     margin: 0;
     padding: 25px 0px;
     color: var(--light-color);
-    transition: 0.2s;
+    transition: 2s;
 }
 
 .article_overview_title_clicked{
     position: absolute;
-    top: 0;
     left: 0;
     width:100%;
     height: 100%;
