@@ -1,14 +1,27 @@
 html{
-    background-color: var( --main-color);
+    background-color: var(--main-color);
     color: var(--light-shade);
-    font-family:'Courier New', Courier, monospace;
-    font-size: xx-large;
-
+    font-family: 'Quicksand', sans-serif;
     --main-color: #0C040A;
     --main-shade: #2C2C2C;
     --light-color: #D6A552;
     --light-shade: #D9D0AC;
 }
+
+a {
+    color: var(--light-shade); /* Couleur de base pour les liens non visités */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+}
+
+a:visited {
+    color: var(--light-shade); /* Couleur des liens visités (identique à la couleur de base) */
+}
+
+a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+
 
 .hidden{
     display: none;
@@ -17,25 +30,21 @@ html{
 header{
     display: flex;
     align-items: center;
-    margin: 1vh;
-    gap: 5vh;
-    margin: 2vh 5vh 2vh 5vh; 
+    width: 93%;
+    justify-content: center;
+    gap: 8vh;
+    padding: 3vh 1vh 3vh 1vh;
+    font-size: xx-large;
 }
 
 .header_profil_img {
-    width: 16vh; /* Ajustez la largeur de la div parente selon vos besoins */
-    height: 16vh; /* Ajustez la hauteur de la div parente selon vos besoins */
+    width: 13vh; /* Ajustez la largeur de la div parente selon vos besoins */
+    height: 13vh; /* Ajustez la hauteur de la div parente selon vos besoins */
     overflow: hidden; /* Masque tout contenu dépassant de la div parente */
     border-radius: 50%; /* Rend l'image ronde */
     background-color:  var(--light-shade);
     justify-content: center;
   }
-  
-.header_profil_name{
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-}
 
 .header_profil_img img {
     width: 100%; /* Ajuste la largeur de l'image à la taille de la div parente */
@@ -66,7 +75,7 @@ main{
 
 .article_overview_title{
     background-color: rgba(0, 0, 0, 0.8);
-    opacity: 70%;
+    opacity: 0.7;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -89,13 +98,7 @@ main{
 
 .article_overview_title_text {
     padding: 5px 5px 5px 5px;
-}
-
-.merged {
-    width: 100px;
-    height: 100px;
-    border-radius: 1px;
-    border: #D6A552;
+    font-size: x-large;
 }
 
 .article_overview_description{
@@ -143,5 +146,31 @@ main{
 .article_overview #third:hover,
 .article_overview #fourth:hover {
     transform: scale(1.1); /* Applique un zoom de 110% lors du survol */
+}
+
+.article_overview_description {
+    display: flex;
+    flex-direction: column; /* Affiche les éléments en colonne */
+    align-items: flex-start; /* Aligne les éléments sur le côté gauche */
+    height: auto;
+}
+
+.article_overview_description ul {
+    list-style: none; /* Supprime les puces de la liste */
+    padding: 2vh 5vh;
+}
+
+object{
+    height: 68vh;
+}
+
+/* Style alternatif pour les éléments pairs (à droite) */
+.alternate-align li:nth-child(even) {
+    text-align: right;
+}
+
+/* Style alternatif pour les éléments impairs (à gauche) */
+.alternate-align li:nth-child(odd) {
+    text-align: left;
 }
 

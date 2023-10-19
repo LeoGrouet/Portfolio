@@ -24,6 +24,7 @@ articles.forEach((article) => {
           // Rétablir l'état initial
           article.style.width = "15%";
           textElement.style.position = "absolute";
+          article.style.transition = "0.4s";
           textElement.style.height = "10%";
           article.classList.add("anim");
           descriptionDiv.style.display = "none";

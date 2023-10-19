@@ -10,7 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     <script src="/js/randomisateurImg.js" defer ></script>
-    <script src="/js/fusionArticle.js" defer></script>
+    <script src="/js/animationArticle.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Page Perso</title>
 </head>
 <body>
@@ -28,15 +31,25 @@
             <div class="article_overview_title">
                 <h3><p class="article_overview_title_text">Mon parcours</p></h3>
                 <div style="display: none;" class="article_overview_description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus cum numquam aliquid voluptatum quo, ducimus omnis nisi labore nihil placeat, praesentium explicabo voluptate ullam dolorem at nemo unde tempora hic!
-                </div>
+                Apres quelques années passés à travailler entre le monde associatif ( Caen Sud Basket ) et celui du télécom ( Sogetrel ), j'ai entamé une reconversion Développeur Web en Aout 2022.
+                J'ai débuté mon apprentissage du Développement avec l'école en ligne " O'clock " et après 3 mois de socle, j'ai acquis de solide compétence en HTML, CSS et Javascript Front et Back, via node.js notament.
+                S'en est suivi un mois complet de spécialisation, pour lequel j'ai fait le choix du back. J'ai ajouté à mes compétences de socle, des notions en graphql, mongo, sqitch et globalement une meilleure compréhension de la partie back-end.
+                Enfin, le dernier mois de formation à été dédié a la réalisation d'un projet par équipe, dont vous pourrez retrouver le lien en allant dans l'onglet projet ! 
+            </div>
             </div>
         </article>
         <article id="second" class="article_overview anim">
             <div class="article_overview_title">
                 <h3 class="article_overview_title_text"><p>Mes hobbies</p></h3>
                 <div style="display: none;" class="article_overview_description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nisi dolor deleniti, quis, atque ab nihil perferendis aliquam tempora totam libero. Eum placeat aut fugiat? Perspiciatis, laboriosam minus. Possimus, repellendus!
+                <ul class="alternate-align">
+                    <li class="article_overview_li">Basket-ball</li>
+                    <li class="article_overview_li">Jeux Vidéo</li>
+                    <li class="article_overview_li">Sciences</li>
+                    <li class="article_overview_li">Langues</li>
+                    <li class="article_overview_li">Lectures</li>
+                    <li class="article_overview_li">Voyages</li>
+                </ul>
                 </div>
             </div>
         </article>
@@ -44,7 +57,12 @@
                 <div class="article_overview_title">
                     <h3><p class="article_overview_title_text">Mes projets</p></h3>
                     <div style="display: none;" class="article_overview_description">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis sint voluptates vel beatae labore animi perspiciatis mollitia quos ad cumque est dolore aspernatur illo optio laboriosam a dolor, ipsum quibusdam.
+                        <ul>
+                            <li><a href="https://codeclicker.dev/">Codeclicker</a></li>
+                           <li><a href="#">Nasartistique ( Consommation d'API de la NASA ) à venir</a></li>
+                           <li><a href="#">Caen Bridge Club</a></li>
+                            <li><a href="https://github.com/LeoGrouet">Github</a></li>
+                        </ul>
                     </div>
                 </div>
         </article>
@@ -52,7 +70,8 @@
             <div class="article_overview_title">
                 <h3><p class="article_overview_title_text">Mon CV</p></h3>
                 <div style="display: none;" class="article_overview_description">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem atque vero, maxime reiciendis laborum omnis ipsam voluptatem cum error tempore quae deserunt nisi voluptatum fugiat quod pariatur voluptates natus eos?
+                    <object data="./Image/CV_Leo-Grouet-202304.pdf" type="application/pdf">
+                    </object>
                 </div>
             </div>
         </article>
