@@ -8,21 +8,48 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-    <script src="/js/randomisateurImg.js" defer ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="/js/loadingScreen.js" defer></script>
     <script src="/js/animationArticle.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Page Perso</title>
 </head>
 <body>
-    <header>
-        <div id="portrait" class="header_profil_img">
-            
+    <div class="loader-container">
+        <div class="loader">
+            <div class="loader-presentation">
+                <div class="loader-presentation-text">
+                    <h4>Léo G.</h4>
+                    <h2>DEVELOPPEUR WEB & WEB MOBILE</h2>
+                    <h3>BIENVENUE</h3>
+                        <div class="loader-presentation-text-p">
+                            <p>Développeur Web reconverti </p>
+                            <p>Ma passion pour le Développement Web est née à travers mes experiences professionnel</p>
+                            <p>Mon univers est encore en expension...</p>
+                        </div> 
+                </div>
+                <div class="loader-presentation-image-container">
+                    <div class="loader-image">
+                        <img src="./Image/moi3.PNG" alt="Portrait">
+                    </div>
+                </div>
+               
+            </div>
+            <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Clique moi dessus si mon créateur t'interresse</span>
+              </button>
         </div>
-        <div class="header_profil_name">
-            <p>Léo Grouet - Développeur Web</p>
+    </div>
+    
+<div class="content">
+    <header>
+        <div class="header-logo">
+            <span>Léo</span> <span>GROUET</span>
+        </div>
+        <div class="header-menu">
+
         </div>
     </header>
 
@@ -76,7 +103,7 @@
             </div>
         </article>
     </main>
-
+</div>
     <footer></footer>
 
 </body>

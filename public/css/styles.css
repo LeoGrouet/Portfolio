@@ -1,11 +1,38 @@
+@font-face {
+    font-family: 'thunder'; /* Remplacez par le nom que vous souhaitez utiliser */
+    src: url('../Thunder-BlackLC.otf') format('truetype'); /* Remplacez par le chemin réel vers votre fichier de police */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'thunder-thin'; /* Remplacez par le nom que vous souhaitez utiliser */
+    src: url('../Thunder-ThinLC.otf') format('truetype'); /* Remplacez par le chemin réel vers votre fichier de police */
+    font-weight: normal;
+    font-style: normal;
+  }
+
 html{
     background-color: var(--main-color);
-    color: var(--light-shade);
-    font-family: 'Quicksand', sans-serif;
     --main-color: #0C040A;
     --main-shade: #2C2C2C;
     --light-color: #D6A552;
     --light-shade: #D9D0AC;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.header-logo{
+    font-family: 'thunder',sans-serif;
+    color: var(--light-color);
+    display: flex;
+    align-items: center;
+    height: 9vh;
+    gap: 10%;
+    width: 6vw;
 }
 
 a {
@@ -21,40 +48,15 @@ a:hover {
     text-decoration: underline; /* Soulignement au survol */
 }
 
-
-
 .hidden{
     display: none;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    width: 93%;
-    justify-content: center;
-    gap: 8vh;
-    padding: 3vh 1vh 3vh 1vh;
-    font-size: xx-large;
-}
-
-.header_profil_img {
-    width: 13vh; /* Ajustez la largeur de la div parente selon vos besoins */
-    height: 13vh; /* Ajustez la hauteur de la div parente selon vos besoins */
-    overflow: hidden; /* Masque tout contenu dépassant de la div parente */
-    border-radius: 50%; /* Rend l'image ronde */
-    background-color:  var(--light-shade);
-    justify-content: center;
-  }
-
-.header_profil_img img {
-    width: 100%; /* Ajuste la largeur de l'image à la taille de la div parente */
-    height: auto; /* Ajuste automatiquement la hauteur en fonction de la largeur */
-    display: block; /* Empêche les marges par défaut de l'image */
-  }
-
 main{
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 90%;
 }
 
 .article_overview {
@@ -62,14 +64,14 @@ main{
     position: relative;
     overflow: hidden;
     margin: 12px;
-    height: 80vh;
+    height: 75vh;
     width: 15%;
     border-radius: 50% 50% 50% 50% / 15% 15% 15% 15%;
     transition: 0.4s ease;
 }
 
 .anim:hover {
-    transform: translateY(1vh) scale(1.1); /* Ajoutez l'échelle ici et utilisez translateY pour éviter de réinitialiser la transition */
+    transform: translateY(1vh); /* Ajoutez l'échelle ici et utilisez translateY pour éviter de réinitialiser la transition */
     transition: 0.2s ease-out;
 }
 
@@ -84,7 +86,7 @@ main{
     text-align: center;
     margin: 0;
     padding: 25px 0px;
-    color: var(--light-color);
+    color: white;
     transition: 2s;
 }
 
@@ -126,18 +128,18 @@ main{
 }
 
 #third{
-    background-image: url(../Image/chemin.jpg);
+    background-image: url(../Image/projet.png);
     background-size: cover; /* Optionnel : pour ajuster la taille de l'image de manière à couvrir l'élément */
     background-repeat: no-repeat; /* Optionnel : pour éviter la répétition de l'image */
-    background-position: center; 
+    background-position: left; 
     transition: transform 0.2s;
 }
 
 #fourth{
-    background-image: url(../Image/chemin.jpg);
+    background-image: url(../Image/image-cv.png);
     background-size: cover; /* Optionnel : pour ajuster la taille de l'image de manière à couvrir l'élément */
     background-repeat: no-repeat; /* Optionnel : pour éviter la répétition de l'image */
-    background-position: center; 
+    background-position: left; 
     transition: transform 0.2s;
 }
 
@@ -145,7 +147,7 @@ main{
 .article_overview #second:hover,
 .article_overview #third:hover,
 .article_overview #fourth:hover {
-    transform: scale(1.1); /* Applique un zoom de 110% lors du survol */
+    transform: scale(0,5); /* Applique un zoom de 110% lors du survol */
 }
 
 .article_overview_description {
@@ -174,3 +176,174 @@ object{
     text-align: left;
 }
 
+.content{
+    display: none;
+    height: 100vh;
+}
+
+.loader{
+    margin: 0vh 5vh;
+}
+
+.loader-container{
+    height: 100vh;
+}
+
+.loader-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-presentation{
+    display: flex;
+    gap: 15vh ;
+}
+
+.loader-presentation-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    height: 75vh;
+}
+
+.loader-presentation-image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loader-image>img{
+    height: 40vh;
+    border-radius: 50%;
+}
+
+.loader-presentation-text h2{
+    color: var(--light-color);
+    font-family: 'thunder-thin', sans-serif;
+    font-size: x-large;
+}
+
+.loader-presentation-text h3{
+    font-family: 'thunder', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 28%;
+    font-size: 135px;
+}
+
+.loader-presentation-text h4{
+    font-size: 30px;
+    font-family: 'thunder-thin' , sans-serif;
+    color: var(--light-shade);
+}
+
+.loader-presentation-text-p{
+    font-family: 'thunder-thin', sans-serif;
+    font-size: larger;
+    color: var(--light-color);
+    opacity: 0,5;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.8s ease; /* Vous pouvez ajuster la durée et l'effet d'interpolation selon vos besoins */
+}
+  
+.fade-in {
+    display: block;
+    opacity: 1;
+    transition: 0,5s ease; /* Assurez-vous que la durée et l'effet d'interpolation correspondent à ceux de la classe fade-out */
+}
+
+button {
+    font: 'thunder', sans-serif;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.learn-more {
+    width: 33rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: var(--main-shade);
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: var(--light-shade);
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid var(--light-shade);
+    border-right: 0.125rem solid var(--light-shade);
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: var(--main-shade);
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: var(--light-shade);
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: var(--light-shade);
+   }
