@@ -1,39 +1,39 @@
 const techsArray = [
   {
     name: "Javascript",
-    image: "./image/jslogo.png",
+    image: "./image/logoStacksTechniques/jslogo.png",
   },
   {
     name: "HTML",
-    image: "./image/html-5.png",
+    image: "./image/logoStacksTechniques/html-5.png",
   },
   {
     name: "CSS",
-    image: "./image/css-3.png",
+    image: "./image/logoStacksTechniques/css-3.png",
   },
   {
     name: "EJS",
-    image: "./image/ejslogo.png",
+    image: "./image/logoStacksTechniques/ejslogo.png",
   },
   {
     name: "MONGO DB",
-    image: "./image/MONGODB.webp",
+    image: "./image/logoStacksTechniques/MONGODB.webp",
   },
   {
     name: "NODE.JS",
-    image: "./image/node-js.png",
-  },
-  {
-    name: "SQITCH",
-    image: "./image/sqitchlogo.png",
+    image: "./image/logoStacksTechniques/node-js.png",
   },
   {
     name: "SQL",
-    image: "./image/sqllogo.jpg",
+    image: "./image/logoStacksTechniques/sqllogo.jpg",
   },
   {
     name: "WHIMSICAL",
-    image: "./image/whimsical.webp",
+    image: "./image/logoStacksTechniques/whimsical.webp",
+  },
+  {
+    name: "Postgres",
+    image: "./image/logoStacksTechniques/Postgresql_elephant.png",
   },
 ];
 

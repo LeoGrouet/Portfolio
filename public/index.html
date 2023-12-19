@@ -16,6 +16,8 @@
     <script src="/js/animationArticle.js" defer></script>
     <script src="/js/cursor.js" defer></script>
     <script src="/js/cardTech.js" defer></script>
+    <script src="/js/showdiv.js" defer></script>
+    <script src="/js/theme.js" defer></script>
     <title>Page Perso</title>
 </head>
 <body>
@@ -39,7 +41,7 @@
                 </div>
                
             </div>
-            <button class="learn-more">
+            <button class="learn-more isClickable">
                 <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
                 </span>
@@ -51,62 +53,77 @@
 <div class="content">
     <header>
         <div class="header-logo">
-            <span class="header-logo-span">Léo GROUET</span>
+            <span class="header-logo-span">Grouet Léo - Développeur Web</span>
         </div>
         <div class="header-menu">
-
+            <div class="theme_button"><img id="theme" src="#" alt="light mode"></div>
         </div>
     </header>
 
     <main>
-        <article id="first" class="article_overview">
+        <article id="first" class="article_overview isClickable">
             <div class="article_overview_title">
                 <h3><p class="article_overview_title_text">ABOUT ME</p></h3>
                 <div style="display: none;" class="article_overview_description">
+                    <img class="back_arrow" src="./Image/IcBaselineArrowBack.svg">
                 <div class="article_overview_description_text">
-                    Apres quelques années passés à travailler entre le monde associatif ( Caen Sud Basket ) et celui du télécom ( Sogetrel ), j'ai entamé une reconversion Développeur Web en Aout 2022.
-                    J'ai débuté mon apprentissage du Développement avec l'école en ligne " O'clock " et après 3 mois de socle, j'ai acquis de solide compétence en HTML, CSS et Javascript.
-                    S'en est suivi un mois complet de spécialisation, pour lequel j'ai fait le choix du back. J'ai ajouté à mes compétences de socle, des notions en graphql, mongo, sqitch et globalement une meilleure compréhension de la partie back-end.
-                    Enfin, le dernier mois de formation à été dédié a la réalisation d'un projet par équipe, dont vous pourrez retrouver le lien en allant dans l'onglet projet !
+                        Apres quelques années passés à travailler entre le monde associatif ( Caen Sud Basket ) et celui du télécom ( Sogetrel ), j'ai entamé une reconversion Développeur Web en Aout 2022.
+                        J'ai débuté mon apprentissage du Développement avec l'école en ligne " O'clock " et après 3 mois de socle, j'ai acquis de solide compétence en HTML, CSS et Javascript.
+                        S'en est suivi un mois complet de spécialisation, pour lequel j'ai fait le choix du back. J'ai ajouté à mes compétences de socle, des notions en graphql, mongo, sqitch et globalement une meilleure compréhension de la partie back-end.
+                        Enfin, le dernier mois de formation à été dédié a la réalisation d'un projet par équipe, dont vous pourrez retrouver le lien en allant dans l'onglet projet !
+                    <span class="article_overview_description_cv"><a href="./Image/CV_Leo-Grouet-202304.pdf">Curriculum Vitae</a></span>
                 </div>
-               <span class="article_overview_description_cv"><a href="./Image/CV_Leo-Grouet-202304.pdf">Curriculum Vitae</a></span>
+                <div class="article_overview_description_softskill">
+                    <h3>SoftSkills</h3>
+                    <ul>
+                        <li>L'écoute<span> Une qualité indispensable selon moi qui me permet de prendre en consideration les ressenties et les demandes des personnes avec lesquels je travail </span></li>
+                        <li>Remise en question <span> La remise en question est également necessaire pour pouvoir  </span></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
             </div>
         </article>
-        <article id="second" class="article_overview">
+        <article id="second" class="article_overview isClickable">
             <div class="article_overview_title">
                 <h3 class="article_overview_title_text"><p>HOBBIES</p></h3>
                 <div style="display: none;" class="article_overview_description">
                 <ul class="alternate-align">
-                    <li class="article_overview_li">Basket-ball</li>
-                    <li class="article_overview_li">Jeux Vidéo</li>
-                    <li class="article_overview_li">Sciences</li>
-                    <li class="article_overview_li">Langues</li>
-                    <li class="article_overview_li">Lectures</li>
-                    <li class="article_overview_li">Voyages</li>
+                    <li class="article_overview_li"><div>Basket-ball <span> En Régional 2 à Carpiquet</span></div></li>
+                    <li class="article_overview_li"><div>Jeux Vidéo <span> Final Fantasy X , meilleur jeu , pas de débat possible. </span></div></li>
+                    <li class="article_overview_li"><div>Sciences <span> Astronomie enjoyeur </span></div></li>
+                    <li class="article_overview_li"><div>Langues <span> J'essaye d'apprendre en autodidacte le Japonais </span></div></li>
+                    <li class="article_overview_li"><div>Lectures <span> Je laisse les polars et les romans à l'eau de rose sur l'étagère, moi j'aime les dragons et les batailles épiques à l'arc et l'épée. </span></div></li>
+                    <li class="article_overview_li"><div>Voyages <span> J'ai eu la chance de voyager en Asie, et en europe étant jeune, et j'ai récemment fait un voyage de 4 mois en Scandinavie à vélo. Prochain objectif : Le Japon évidemment. </span></div></li>
                 </ul>
                 </div>
             </div>
         </article>
-        <article id="third" class="article_overview">
+        <article id="third" class="article_overview isClickable">
                 <div class="article_overview_title">
                     <h3><p class="article_overview_title_text">PROJECTS</p></h3>
-                    <div style="display: none;" class="article_overview_description">
+                    <div style="display: none;" class="article_overview_description show_div_container">
                         <ul>
-                            <li><a href="https://codeclicker.dev/">Codeclicker</a></li>
-                            <li><a href="#">Caen Bridge Club</a></li>
-                            <li><a href="#">Poke Happy</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="https://github.com/LeoGrouet">Github</a></li>
+                            <li class="name_site"><a href="https://codeclicker.dev/">Codeclicker</a></li>
+                            <li class="name_site"><a href="https://github.com/LeoGrouet/Caen-Bridge-Club">Caen Bridge Club</a></li>
+                            <li class="name_site"><a href="https://github.com/LeoGrouet/poke-api">Poke Happy</a></li>
+                            <li class="name_site"><a href="https://github.com/LeoGrouet/Portfolio">Portfolio</a></li>
+                            <li class="name_site"><a href="https://github.com/LeoGrouet">Github</a></li>
                         </ul>
+                        <div class="show_div">
+
+                        </div>
                     </div>
                 </div>
         </article>
-        <article id="fourth" class="article_overview">
+        <article id="fourth" class="article_overview isClickable">
             <div class="article_overview_title">
                 <h3><p class="article_overview_title_text">STACKS TECHNIQUES</p></h3>
                 <div style="display: none;" class="article_overview_description">
-                    <div class="card-tech-container"></div>
+                    <div class="card-tech-container">
+                        <!-- Généré par le fichier JS cardTech -->
+                    </div>
                 </div>
             </div>
         </article>

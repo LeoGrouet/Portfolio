@@ -42,7 +42,7 @@ articles.forEach((article) => {
           textElement.style.left = "0";
           textElement.style.bottom = "0"; // Ajustez la position pour rester en bas
           textElement.style.width = "100%";
-          textElement.style.height = "100%";
+          textElement.style.height = "95%";
           textElement.style.zIndex = "2"; // Assurez-vous que le texte est au-dessus de l'image de fond
         }
       } else {

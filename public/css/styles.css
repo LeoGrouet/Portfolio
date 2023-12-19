@@ -19,6 +19,7 @@ html{
     --main-shade: #3e0000;
     --light-color: #fbf4f4;
     --light-shade: #e1a3a3;
+    --opac: #070000cd;
 }
 
 html, body {
@@ -51,7 +52,9 @@ header{
 }
 
 .header-logo-span{
-    font-size: xxx-large;
+    font-size: xx-large;
+    font-family: 'thunder-thin', sans-serif;
+    color: var(--light-color);
 }
 
 a {
@@ -91,7 +94,7 @@ main{
 }
 
 .article_overview_title{
-    background-color: #070000c2;
+    background-color: var(--opac);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -100,7 +103,7 @@ main{
     text-align: center;
     margin: 0;
     padding: 25px 0px;
-    color: white;
+    color: var(--light-color);
     transition: 2s;
 }
 
@@ -126,9 +129,16 @@ main{
     align-items: center;
 }
 
-#first{
+#first {
     background-image: url(../Image/chemin.jpg);
-}
+  }
+  
+  #first:hover,
+  #second:hover,
+  #third:hover,
+  #fourth:hover {
+    transform: scale(1.01); /* Applique un zoom de 10% sur le survol */
+  }
 
 #second{
     background-image: url(../Image/basket.jpg);
@@ -152,26 +162,26 @@ main{
     transition: transform 0.2s;
 }
 
-.article_overview #first:hover,
-.article_overview #second:hover,
-.article_overview #third:hover,
-.article_overview #fourth:hover {
-    transform: scale(0,5); /* Applique un zoom de 110% lors du survol */
+.article_overview:hover {
+    transform: scale(1); /* Applique un zoom de 110% lors du survol */
 }
 
 .article_overview_description {
-    height: auto;
+    display: flex;
+    height: 84%;
     font-family: 'thunder-thin', sans-serif;
     margin: 2% 8%;
     text-align: justify;
     word-spacing: 4px;
     font-size: x-large;
-
 }
 
 .article_overview_description ul {
-    list-style: none; /* Supprime les puces de la liste */
-    padding: 2vh 5vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 7%;
+    gap: 6vh;
 }
 
 object{
@@ -240,7 +250,8 @@ object{
 }
 
 .loader-presentation-text h3{
-    font-family: 'thunder', sans-serif;
+    font-family: 'thunder-thin', sans-serif;
+    font-weight: bold;
     color: var(--light-color);
     display: flex;
     align-items: center;
@@ -373,9 +384,41 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4vh;
+    margin-bottom: 5vh;
+    gap: 2vh;
 }
 
 .card-tech>img{
     height: 15vh;
+}
+
+.pointer-circle{
+    transition: 0.3s ease;
+}
+
+.show_div_container{
+    display: flex;
+}
+
+.show_div{
+    width: 61%;
+    height: 100%;
+    position: relative;
+}
+
+.article_overview_description_softskill{
+
+}
+
+.back_arrow{
+    height: 6vh;
+    position: absolute;
+    left: 15vh;
+    top: 7vh;
+}
+
+.theme_button>img{
+    height: 4vh;
+    position: absolute;
+    right: 39vh;
 }
