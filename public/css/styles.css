@@ -20,6 +20,8 @@ html{
     --light-color: #fbf4f4;
     --light-shade: #e1a3a3;
     --opac: #070000cd;
+
+    transition: 2s ease;
 }
 
 html, body {
@@ -408,6 +410,17 @@ button {
 
 .article_overview_description_softskill{
 
+}
+
+.article_overview_li_hobbies{
+    display: flex;
+    flex-direction: column;
+    font-family: 'thunder-thin';
+    color: var(--light-shade);
+}
+
+.article_overview_li_hobbies>span{
+   color: var(--light-color);
 }
 
 .back_arrow{

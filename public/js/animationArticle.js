@@ -37,7 +37,11 @@ articles.forEach((article) => {
           article.style.transition = "1s";
           article.classList.remove("anim");
           textTitle.style.padding = "38px 5px 5px 5px";
-          descriptionDiv.style.display = "block";
+          if (clickedArticle.id != "third") {
+            descriptionDiv.style.display = "block";
+          } else {
+            descriptionDiv.style.display = "flex";
+          }
           textElement.style.position = "absolute";
           textElement.style.left = "0";
           textElement.style.bottom = "0"; // Ajustez la position pour rester en bas
