@@ -28,7 +28,7 @@ function toggleTheme() {
     html.style.setProperty("--main-color", "#fbf4f4");
     html.style.setProperty("--main-shade", "#3e0000");
     html.style.setProperty("--light-color", "#070000");
-    html.style.setProperty("--light-shade", "#e1a3a3");
+    html.style.setProperty("--light-shade", "#725252");
     html.style.setProperty("--opac", "#fbf4f4cd");
   }
 }
@@ -54,6 +54,6 @@ if (
   html.style.setProperty("--main-color", "#fbf4f4");
   html.style.setProperty("--main-shade", "#3e0000");
   html.style.setProperty("--light-color", "#070000");
-  html.style.setProperty("--light-shade", "#e1a3a3");
+  html.style.setProperty("--light-shade", "#725252");
   html.style.setProperty("--opac", "#fbf4f4cd");
 }

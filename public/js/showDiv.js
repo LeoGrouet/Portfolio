@@ -42,3 +42,12 @@ arrayOfSite[3].addEventListener("mouseover", (e) => {
   showDiv.style.backgroundRepeat = "no-repeat";
   showDiv.style.backgroundPosition = "left";
 });
+
+// Comportement pour le deuxieme objet du tableau arrayOfSite = github
+
+arrayOfSite[4].addEventListener("mouseover", (e) => {
+  showDiv.style.backgroundImage = "url(./Image/screenProjects/github.png)";
+  showDiv.style.backgroundSize = "cover";
+  showDiv.style.backgroundRepeat = "no-repeat";
+  showDiv.style.backgroundPosition = "left";
+});

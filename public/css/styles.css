@@ -15,11 +15,6 @@
 html{
     background: var(--main-color);
     cursor: none;
-    --main-color: #070000;
-    --main-shade: #3e0000;
-    --light-color: #fbf4f4;
-    --light-shade: #e1a3a3;
-    --opac: #070000cd;
 
     transition: 2s ease;
 }
