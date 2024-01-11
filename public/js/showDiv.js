@@ -7,47 +7,39 @@ for (const site of siteToHover) {
   arrayOfSite.push(site);
 }
 
-// Comportement pour le premier objet du tableau arrayOfSite = Code Clicker
+const projectsData = [
+  {
+    site: arrayOfSite[0],
+    image: "./Image/screenProjects/codeclicker.png",
+    position: "center",
+  },
+  {
+    site: arrayOfSite[1],
+    image: "./Image/screenProjects/CaenBridge1.png",
+    position: "left",
+  },
+  {
+    site: arrayOfSite[2],
+    image: "./Image/screenProjects/poke1.png",
+    position: "left",
+  },
+  {
+    site: arrayOfSite[3],
+    image: "./Image/screenProjects/portfolio1.png",
+    position: "left",
+  },
+  {
+    site: arrayOfSite[4],
+    image: "./Image/screenProjects/github.png",
+    position: "left",
+  },
+];
 
-arrayOfSite[0].addEventListener("mouseover", (e) => {
-  showDiv.style.backgroundImage = "url(./Image/screenProjects/codeclicker.png)";
-  showDiv.style.backgroundSize = "cover";
-  showDiv.style.backgroundRepeat = "no-repeat";
-  showDiv.style.backgroundPosition = "center";
-});
-
-// Comportement pour le deuxieme objet du tableau arrayOfSite = CaenBridge
-
-arrayOfSite[1].addEventListener("mouseover", (e) => {
-  showDiv.style.backgroundImage = "url(./Image/screenProjects/CaenBridge1.png)";
-  showDiv.style.backgroundSize = "cover";
-  showDiv.style.backgroundRepeat = "no-repeat";
-  showDiv.style.backgroundPosition = "left";
-});
-
-// Comportement pour le deuxieme objet du tableau arrayOfSite = Poke
-
-arrayOfSite[2].addEventListener("mouseover", (e) => {
-  showDiv.style.backgroundImage = "url(./Image/screenProjects/poke1.png)";
-  showDiv.style.backgroundSize = "cover";
-  showDiv.style.backgroundRepeat = "no-repeat";
-  showDiv.style.backgroundPosition = "left";
-});
-
-// Comportement pour le deuxieme objet du tableau arrayOfSite = Portfolio
-
-arrayOfSite[3].addEventListener("mouseover", (e) => {
-  showDiv.style.backgroundImage = "url(./Image/screenProjects/portfolio1.png)";
-  showDiv.style.backgroundSize = "cover";
-  showDiv.style.backgroundRepeat = "no-repeat";
-  showDiv.style.backgroundPosition = "left";
-});
-
-// Comportement pour le deuxieme objet du tableau arrayOfSite = github
-
-arrayOfSite[4].addEventListener("mouseover", (e) => {
-  showDiv.style.backgroundImage = "url(./Image/screenProjects/github.png)";
-  showDiv.style.backgroundSize = "cover";
-  showDiv.style.backgroundRepeat = "no-repeat";
-  showDiv.style.backgroundPosition = "left";
+projectsData.forEach(({ site, image, position }) => {
+  site.addEventListener("mouseover", () => {
+    showDiv.style.backgroundImage = `url(${image})`;
+    showDiv.style.backgroundSize = "cover";
+    showDiv.style.backgroundRepeat = "no-repeat";
+    showDiv.style.backgroundPosition = position;
+  });
 });

@@ -25,6 +25,7 @@ document.addEventListener("mousemove", (e) => {
 const clickableObject = document.querySelectorAll(".isClickable");
 const curseur = document.querySelector(".pointer-circle");
 
+// Gestion de l'augmentation de la taille du curseur lors d'un passage au dessus d'un élément cliquable
 for (const object of clickableObject) {
   object.addEventListener("mouseover", () => {
     curseur.style.height = "4vh";

@@ -90,6 +90,17 @@ main{
     transition: 0.4s ease;
 }
 
+.article_overview_extend {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin: 12px;
+    height: 75vh;
+    width: 15%;
+    border-radius: 50% 50% 50% 50% / 15% 15% 15% 15%;
+    transition: 0.4s ease;
+}
+
 .article_overview_title{
     background-color: var(--opac);
     position: absolute;
