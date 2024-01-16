@@ -90,17 +90,6 @@ main{
     transition: 0.4s ease;
 }
 
-.article_overview_extend {
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    margin: 12px;
-    height: 75vh;
-    width: 15%;
-    border-radius: 50% 50% 50% 50% / 15% 15% 15% 15%;
-    transition: 0.4s ease;
-}
-
 .article_overview_title{
     background-color: var(--opac);
     position: absolute;
@@ -131,7 +120,7 @@ main{
 
 .article_overview_description_cv{
     height: 6vh;
-    margin-top: 5%;
+    margin: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,15 +170,15 @@ main{
     margin: 2% 8%;
     text-align: justify;
     word-spacing: 4px;
-    font-size: x-large;
+    font-size: large;
 }
 
 .article_overview_description ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    padding: 0% 7%;
-    gap: 6vh;
+    padding: 5% 2%;
+    gap: 5vh;
 }
 
 object{
@@ -409,13 +398,17 @@ button {
 }
 
 .show_div{
-    width: 61%;
-    height: 100%;
+    width: 85%;
+    height: 95%;
     position: relative;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: left; 
 }
 
 .article_overview_description_softskill{
-
+    display: flex;
+    word-spacing: 2px;
 }
 
 .article_overview_li_hobbies{
@@ -440,4 +433,25 @@ button {
     height: 4vh;
     position: absolute;
     right: 39vh;
+}
+
+.skills{
+    color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.skills>ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills_li{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills_li>p{
+    color: var(--light-shade);
 }
