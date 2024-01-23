@@ -3,14 +3,14 @@
     src: url('../Thunder-BlackLC.otf') format('truetype'); /* Remplacez par le chemin réel vers votre fichier de police */
     font-weight: normal;
     font-style: normal;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'thunder-thin'; /* Remplacez par le nom que vous souhaitez utiliser */
     src: url('../Thunder-ThinLC.otf') format('truetype'); /* Remplacez par le chemin réel vers votre fichier de police */
     font-weight: normal;
     font-style: normal;
-  }
+}
 
 html{
     background: var(--main-color);
@@ -23,7 +23,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-  }
+}
 
 header{
     display: flex;
@@ -52,6 +52,7 @@ header{
     font-size: xx-large;
     font-family: 'thunder-thin', sans-serif;
     color: var(--light-color);
+    display: flex;
 }
 
 a {
@@ -80,14 +81,12 @@ main{
 }
 
 .article_overview {
-    display: inline-block;
     position: relative;
     overflow: hidden;
     margin: 12px;
     height: 75vh;
     width: 15%;
     border-radius: 50% 50% 50% 50% / 15% 15% 15% 15%;
-    transition: 0.4s ease;
 }
 
 .article_overview_title{
@@ -128,14 +127,14 @@ main{
 
 #first {
     background-image: url(../Image/chemin.jpg);
-  }
+}
   
   #first:hover,
   #second:hover,
   #third:hover,
   #fourth:hover {
     transform: scale(1.01); /* Applique un zoom de 10% sur le survol */
-  }
+}
 
 #second{
     background-image: url(../Image/basket.jpg);
@@ -167,7 +166,7 @@ main{
     display: flex;
     height: 84%;
     font-family: 'thunder-thin', sans-serif;
-    margin: 2% 8%;
+    margin: 2% 6%;
     text-align: justify;
     word-spacing: 4px;
     font-size: large;
@@ -177,8 +176,12 @@ main{
     list-style: none;
     display: flex;
     flex-direction: column;
-    padding: 5% 2%;
-    gap: 5vh;
+    padding: 1% 2%;
+    gap: 2vh;
+}
+
+.quatrieme{
+    margin: 2% 15%;
 }
 
 object{
@@ -424,15 +427,17 @@ button {
 
 .back_arrow{
     height: 6vh;
+    width: 6vh;
     position: absolute;
     left: 15vh;
     top: 7vh;
 }
 
-.theme_button>img{
-    height: 4vh;
-    position: absolute;
-    right: 39vh;
+.theme_button{
+    height: 5vh;
+    display: flex;
+    position: fixed;
+    right: 21%;
 }
 
 .skills{
