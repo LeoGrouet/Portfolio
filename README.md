@@ -3,6 +3,12 @@
 
 Welcome to my portfolio.  
 
+In this project, I wanted to create a nice designed and original portfolio.
+You can find : 
+ - Small description of myself and my quality and defect.
+ - My hobbies.
+ - Screenshots of few project I worked on.
+ - Techs I learn and where I learned them.
 
 ## Installation
 
